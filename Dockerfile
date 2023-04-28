@@ -11,7 +11,7 @@ RUN python -m pip install --upgrade pip
 
 
 # 安装依赖包
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 暴露应用的端口
 EXPOSE 8000
