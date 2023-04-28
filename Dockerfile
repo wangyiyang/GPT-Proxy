@@ -7,6 +7,8 @@ WORKDIR /app
 # 复制应用代码到容器中
 COPY main.py /app/main.py
 COPY requirements.txt /app/requirements.txt
+RUN python -m pip install --upgrade pip
+
 
 # 安装依赖包
 RUN pip install --no-cache-dir -r requirements.txt
